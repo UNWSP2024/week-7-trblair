@@ -19,7 +19,7 @@ def main():
     # Display the list of numbers that are larger
     # than the number.
     print(f'List of numbers that are larger than {number}:')
-    
+    print([i for i in number_list if i > number])
     # Call the display_larger_than_n_list function,
     # passing a number and number list as arguments.
     display_larger_than_n_list(number, number_list)
@@ -30,7 +30,7 @@ def main():
 def display_larger_than_n_list(n, n_list):
     # Write your code to display all of the numbers in the list that are greater than then number n. below
     print('In display_larger_than_n_list')
-        
+    print([i for i in n_list if i > n])
 # Call the main function.
 if __name__ == '__main__':
     main()
